@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/xiaolai/codex-octopus/main/assets/codex-octopus.svg" alt="Codex Octopus" width="200" />
+</p>
+
 # Codex Octopus
 
 One brain, many arms.
