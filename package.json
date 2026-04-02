@@ -1,7 +1,8 @@
 {
   "name": "codex-octopus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "One brain, many arms — spawn multiple specialized Codex agents as MCP servers",
+  "mcpName": "io.github.xiaolai/codex-octopus",
   "type": "module",
   "bin": {
     "codex-octopus": "dist/index.js"
