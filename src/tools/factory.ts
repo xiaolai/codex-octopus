@@ -96,7 +96,7 @@ export function registerFactoryTool(
     const mcpEntry = {
       [name]: {
         command: "npx",
-        args: ["codex-octopus"],
+        args: ["codex-octopus@latest"],
         env: displayEnv,
       },
     };

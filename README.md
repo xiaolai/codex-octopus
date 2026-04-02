@@ -37,7 +37,7 @@ Add to your `.mcp.json`:
   "mcpServers": {
     "codex": {
       "command": "npx",
-      "args": ["codex-octopus"],
+      "args": ["codex-octopus@latest"],
       "env": {
         "CODEX_SANDBOX_MODE": "workspace-write",
         "CODEX_APPROVAL_POLICY": "never"
@@ -58,7 +58,7 @@ The real power is running several instances with different configurations:
   "mcpServers": {
     "code-reviewer": {
       "command": "npx",
-      "args": ["codex-octopus"],
+      "args": ["codex-octopus@latest"],
       "env": {
         "CODEX_TOOL_NAME": "code_reviewer",
         "CODEX_SERVER_NAME": "code-reviewer",
@@ -71,7 +71,7 @@ The real power is running several instances with different configurations:
     },
     "test-writer": {
       "command": "npx",
-      "args": ["codex-octopus"],
+      "args": ["codex-octopus@latest"],
       "env": {
         "CODEX_TOOL_NAME": "test_writer",
         "CODEX_SERVER_NAME": "test-writer",
@@ -83,7 +83,7 @@ The real power is running several instances with different configurations:
     },
     "quick-qa": {
       "command": "npx",
-      "args": ["codex-octopus"],
+      "args": ["codex-octopus@latest"],
       "env": {
         "CODEX_TOOL_NAME": "quick_qa",
         "CODEX_SERVER_NAME": "quick-qa",
@@ -106,7 +106,7 @@ Don't want to write configs by hand? Add a factory instance:
   "mcpServers": {
     "agent-factory": {
       "command": "npx",
-      "args": ["codex-octopus"],
+      "args": ["codex-octopus@latest"],
       "env": {
         "CODEX_FACTORY_ONLY": "true",
         "CODEX_SERVER_NAME": "agent-factory"
