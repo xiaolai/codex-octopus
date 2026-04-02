@@ -1,0 +1,88 @@
+import type { OptionCatalogEntry } from "./types.js";
+
+export const OPTION_CATALOG: OptionCatalogEntry[] = [
+  {
+    key: "model",
+    envVar: "CODEX_MODEL",
+    label: "Model",
+    hint: "Which model to use",
+    example: '"gpt-5-codex", "o3", "codex-1"',
+  },
+  {
+    key: "appendInstructions",
+    envVar: "CODEX_APPEND_INSTRUCTIONS",
+    label: "Behavior instructions",
+    hint: "Instructions appended to the default system prompt",
+    example: '"Always explain your reasoning step by step."',
+  },
+  {
+    key: "instructions",
+    envVar: "CODEX_INSTRUCTIONS",
+    label: "Full instructions",
+    hint: "Completely replaces the default instructions",
+    example: '"You are a security auditor..."',
+  },
+  {
+    key: "sandboxMode",
+    envVar: "CODEX_SANDBOX_MODE",
+    label: "Sandbox mode",
+    hint: "How file system access is restricted",
+    example: '"read-only", "workspace-write", "danger-full-access"',
+  },
+  {
+    key: "approvalPolicy",
+    envVar: "CODEX_APPROVAL_POLICY",
+    label: "Approval policy",
+    hint: "When to prompt for command approval",
+    example: '"never" (auto-approve), "on-failure", "on-request", "untrusted"',
+  },
+  {
+    key: "cwd",
+    envVar: "CODEX_CWD",
+    label: "Working directory",
+    hint: "Default directory the agent operates in",
+    example: '"/home/user/project"',
+  },
+  {
+    key: "additionalDirs",
+    envVar: "CODEX_ADDITIONAL_DIRS",
+    label: "Additional directories",
+    hint: "Extra directories the agent can access (comma-separated)",
+    example: '"/shared/libs,/data"',
+  },
+  {
+    key: "effort",
+    envVar: "CODEX_EFFORT",
+    label: "Reasoning effort",
+    hint: "How hard the agent thinks",
+    example: '"minimal" (fastest), "low", "medium", "high", "xhigh" (deepest)',
+  },
+  {
+    key: "networkAccess",
+    envVar: "CODEX_NETWORK_ACCESS",
+    label: "Network access",
+    hint: "Allow network access from sandbox",
+    example: '"true" or "false" (default)',
+  },
+  {
+    key: "webSearchMode",
+    envVar: "CODEX_WEB_SEARCH",
+    label: "Web search",
+    hint: "Web search mode",
+    example: '"disabled" (default), "cached", "live"',
+  },
+  {
+    key: "persistSession",
+    envVar: "CODEX_PERSIST_SESSION",
+    label: "Persist sessions",
+    hint: "Save sessions for later resume via _reply tool",
+    example: '"true" (default) or "false"',
+  },
+  {
+    key: "apiKey",
+    envVar: "CODEX_API_KEY",
+    label: "API key",
+    hint: "OpenAI API key for this agent (overrides inherited auth)",
+    example: '"sk-..." — leave unset to inherit from parent',
+  },
+];

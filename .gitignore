@@ -1,0 +1,11 @@
+node_modules/
+dist/
+coverage/
+
+# Claude Code artifacts
+.claude/
+.mcp.json
+CLAUDE.md
+CLAUDE.local.md
+.npmrc
+.mcpregistry_*
