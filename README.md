@@ -224,6 +224,10 @@ All configuration is via environment variables in `.mcp.json`. Every env var is 
 └─────────────────────────────────┘
 ```
 
+## Known Limitations
+
+- **`minimal` effort + web_search**: OpenAI does not allow `web_search` tools with `minimal` reasoning effort. Use `low` or higher if web search is needed.
+
 ## Development
 
 ```bash
