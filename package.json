@@ -1,6 +1,6 @@
 {
   "name": "codex-octopus",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "One brain, many arms — spawn multiple specialized Codex agents as MCP servers",
   "mcpName": "io.github.xiaolai/codex-octopus",
   "type": "module",
@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",
-    "@openai/codex-sdk": "^0.142.1",
+    "@openai/codex-sdk": "^0.142.2",
     "zod": "^4.3.6"
   },
   "devDependencies": {
